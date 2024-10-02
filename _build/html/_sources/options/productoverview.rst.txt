@@ -21,3 +21,16 @@ Long-term Goals
 * Expand the question database to cover more specialized topics.
 * Introduce advanced AI features to simulate more nuanced interview scenarios.
 * Establish partnerships with tech companies to offer verified interview questions.
+* Create separate .rst files for different sections of the product documentation.
+* Implement an ATS optimization feature to help users improve their resumes.
+
+.. toctree::
+   :maxdepth: 2
+
+   resume_optimization
+   ats_scoring
+   partnerships
+---------------
+* Expand the question database to cover more specialized topics.
+* Introduce advanced AI features to simulate more nuanced interview scenarios.
+* Establish partnerships with tech companies to offer verified interview questions.

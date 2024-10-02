@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internal Release Notes for BizFlows Team &mdash; TechTalk AI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Product Overview" href="productoverview.html" />
+    <link rel="prev" title="Release Documentation" href="release_documentation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            TechTalk AI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="new_features.html">New Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enhancements.html">Enhancements and Future Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bug_fixes.html">Bug Fixes and Known Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="known_issues.html">Known Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upcoming_features.html">Upcoming Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_documentation.html">Release Documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Internal Release Notes for BizFlows Team</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#internal-team-overview">Internal Team Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#impact-on-sales-and-customer-support">Impact on Sales and Customer Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps-for-development">Next Steps for Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#automated-invoicing-payment-reminders">1. Automated Invoicing &amp; Payment Reminders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ai-powered-inventory-forecasting">3. AI-Powered Inventory Forecasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customer-segmentation-for-marketing-campaigns">4. Customer Segmentation for Marketing Campaigns</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#enhancements">Enhancements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#enhanced-financial-reporting-dashboard">1. Enhanced Financial Reporting Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faster-api-integrations-for-pos-systems">2. Faster API Integrations for POS Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bug-fixes">Bug Fixes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#invoice-email-delivery-issues">1. Invoice Email Delivery Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delivery-tracking-delays">2. Delivery Tracking Delays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pos-syncing-errors-with-square">3. POS Syncing Errors with Square</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#known-issues">Known Issues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#delayed-sms-notifications-for-large-campaigns">1. Delayed SMS Notifications for Large Campaigns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inventory-alerts-not-appearing-in-dashboard">2. Inventory Alerts Not Appearing in Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#upcoming-features">Upcoming Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nlp-chatbot-for-real-time-customer-support">1. NLP Chatbot for Real-Time Customer Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#multi-language-support-for-sms-notifications">2. Multi-Language Support for SMS Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#release-documentation">Release Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">Internal Release Notes for BizFlows Team</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Impact on Sales and Customer Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Next Steps for Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="productoverview.html">Product Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="productoverview.html">Product Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="impact.html">Expected Impact and Success Criteria</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">TechTalk AI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Internal Release Notes for BizFlows Team</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/options/internal_notes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="internal-release-notes-for-bizflows-team">
+<h1>Internal Release Notes for BizFlows Team<a class="headerlink" href="#internal-release-notes-for-bizflows-team" title="Link to this heading"></a></h1>
+<p>Version: 1.0
+Release Date: [Insert Date]</p>
+<section id="internal-team-overview">
+<h2>Internal Team Overview<a class="headerlink" href="#internal-team-overview" title="Link to this heading"></a></h2>
+<p>The 1.0 release introduces several key features, including real-time delivery tracking, automated invoicing, AI-powered inventory management, and customer segmentation. This release is targeted at meeting the needs of Ethiopian-owned businesses in the DMV area and offers significant enhancements to the overall platform.</p>
+</section>
+<section id="impact-on-sales-and-customer-support">
+<h2>Impact on Sales and Customer Support<a class="headerlink" href="#impact-on-sales-and-customer-support" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Sales:</dt><dd><ul class="simple">
+<li><p>Sales teams should emphasize the value of AI-driven features like inventory forecasting and customer segmentation in demos, as these are unique selling points for BizFlows.</p></li>
+<li><p>Focus on pushing Pro and Enterprise tiers, which offer the most comprehensive feature set for businesses looking to optimize operations and reduce manual processes.</p></li>
+</ul>
+</dd>
+<dt>Customer Support:</dt><dd><ul class="simple">
+<li><p>Be prepared to assist customers with setting up delivery tracking and automated invoicing, as these are the most requested features.</p></li>
+<li><p>Training sessions will be provided to ensure support teams can handle questions about AI forecasting and POS integrations.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="next-steps-for-development">
+<h2>Next Steps for Development<a class="headerlink" href="#next-steps-for-development" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Immediate Focus:</dt><dd><ul class="simple">
+<li><p>Monitor the performance of real-time delivery tracking and invoicing systems to ensure stability during peak usage.</p></li>
+<li><p>Prioritize resolving known issues, particularly SMS notification delays and inventory alerts.</p></li>
+</ul>
+</dd>
+<dt>Upcoming Features:</dt><dd><ul class="simple">
+<li><p>The NLP chatbot for customer support and multi-language SMS notifications are in final stages of development and should be prioritized for the next release.</p></li>
+</ul>
+</dd>
+<dt>Description:</dt><dd><p>BizFlows now offers real-time delivery tracking for all users. Business owners can track deliveries from dispatch to delivery and receive updates directly on the BizFlows dashboard. Customers will also receive SMS/email notifications with live tracking links for their deliveries.</p>
+</dd>
+<dt>Key Benefits:</dt><dd><ul class="simple">
+<li><p>Improve delivery accuracy and timeliness.</p></li>
+<li><p>Provide transparency for both businesses and customers.</p></li>
+<li><p>Reduce the number of delivery-related customer complaints.</p></li>
+</ul>
+</dd>
+<dt>User Impact:</dt><dd><p>Available for all subscription tiers. Customers can enable real-time tracking in the Delivery Settings of their BizFlows dashboard.</p>
+</dd>
+</dl>
+</section>
+<section id="automated-invoicing-payment-reminders">
+<h2>1. Automated Invoicing &amp; Payment Reminders<a class="headerlink" href="#automated-invoicing-payment-reminders" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>Automate your invoicing process with BizFlows’ new Automated Invoicing feature. Invoices are generated automatically from completed sales, and you can set up automated reminders for overdue payments. Integrate with payment processors like Stripe and PayPal to allow customers to pay invoices directly online.</p>
+</dd>
+<dt>Key Benefits:</dt><dd><ul class="simple">
+<li><p>Save time on manual invoicing and bookkeeping.</p></li>
+<li><p>Ensure timely payments with automated reminders.</p></li>
+<li><p>Reduce the risk of late payments, improving cash flow.</p></li>
+</ul>
+</dd>
+<dt>User Impact:</dt><dd><p>Available for all subscription tiers. Payment gateway integration setup is required via the Invoicing Settings in the dashboard.</p>
+</dd>
+</dl>
+</section>
+<section id="ai-powered-inventory-forecasting">
+<h2>3. AI-Powered Inventory Forecasting<a class="headerlink" href="#ai-powered-inventory-forecasting" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>BizFlows introduces AI-driven inventory forecasting for Pro and Enterprise-tier users. The AI analyzes past sales data to predict optimal inventory levels, helping businesses avoid stockouts and overstocking.</p>
+</dd>
+<dt>Key Benefits:</dt><dd><ul class="simple">
+<li><p>Improve inventory management efficiency with predictive analytics.</p></li>
+<li><p>Optimize stock levels to reduce costs and improve order fulfillment.</p></li>
+<li><p>Receive alerts when inventory levels reach a critical threshold.</p></li>
+</ul>
+</dd>
+<dt>User Impact:</dt><dd><p>Available for Pro and Enterprise tiers. Enable AI forecasting in the Inventory Management section of the dashboard.</p>
+</dd>
+</dl>
+</section>
+<section id="customer-segmentation-for-marketing-campaigns">
+<h2>4. Customer Segmentation for Marketing Campaigns<a class="headerlink" href="#customer-segmentation-for-marketing-campaigns" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>Target your marketing efforts more effectively with customer segmentation. Segment customers based on purchase behavior, frequency, and total spend, then send personalized offers to each group.</p>
+</dd>
+<dt>Key Benefits:</dt><dd><ul class="simple">
+<li><p>Drive higher engagement and sales with targeted marketing.</p></li>
+<li><p>Increase repeat business by personalizing offers.</p></li>
+<li><p>Better understand customer behavior and tailor promotions.</p></li>
+</ul>
+</dd>
+<dt>User Impact:</dt><dd><p>Available for Pro and Enterprise tiers. Marketing segmentation can be accessed in the Campaigns section of the dashboard.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="enhancements">
+<h1>Enhancements<a class="headerlink" href="#enhancements" title="Link to this heading"></a></h1>
+<section id="enhanced-financial-reporting-dashboard">
+<h2>1. Enhanced Financial Reporting Dashboard<a class="headerlink" href="#enhanced-financial-reporting-dashboard" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>The financial reporting dashboard has been updated with more detailed views of profit margins, cash flow, and revenue trends. Customizable reports allow businesses to filter data by date, category, and product line.</p>
+</dd>
+<dt>Key Benefits:</dt><dd><ul class="simple">
+<li><p>Gain deeper insights into business financial health.</p></li>
+<li><p>Easily export reports for bookkeeping and tax preparation.</p></li>
+<li><p>Customize reports to match specific business needs.</p></li>
+</ul>
+</dd>
+<dt>User Impact:</dt><dd><p>Available for all subscription tiers. The new features can be accessed in the Reports section of the dashboard.</p>
+</dd>
+</dl>
+</section>
+<section id="faster-api-integrations-for-pos-systems">
+<h2>2. Faster API Integrations for POS Systems<a class="headerlink" href="#faster-api-integrations-for-pos-systems" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>BizFlows now offers faster and more reliable integrations with popular POS systems like Clover and Square. Transaction data is synced in real time, ensuring that invoicing and inventory tracking remain accurate and up-to-date.</p>
+</dd>
+<dt>Key Benefits:</dt><dd><ul class="simple">
+<li><p>Eliminate delays between POS transactions and BizFlows’ financial tools.</p></li>
+<li><p>Improve inventory accuracy with real-time updates.</p></li>
+<li><p>Seamless integration process with step-by-step guides.</p></li>
+</ul>
+</dd>
+<dt>User Impact:</dt><dd><p>Available for all subscription tiers. POS integration setup can be completed in the POS Settings section.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="bug-fixes">
+<h1>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading"></a></h1>
+<section id="invoice-email-delivery-issues">
+<h2>1. Invoice Email Delivery Issues<a class="headerlink" href="#invoice-email-delivery-issues" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>Fixed a bug where invoice emails were not being sent to customers due to an email gateway error.</p>
+</dd>
+<dt>Impact:</dt><dd><p>This issue affected 5% of customers sending invoices via email. With the fix, all invoices are now sent reliably.</p>
+</dd>
+</dl>
+</section>
+<section id="delivery-tracking-delays">
+<h2>2. Delivery Tracking Delays<a class="headerlink" href="#delivery-tracking-delays" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>Addressed an issue where delivery statuses were not updating in real-time for some users due to API throttling from third-party providers.</p>
+</dd>
+<dt>Impact:</dt><dd><p>Affected users can now see live delivery updates without delays.</p>
+</dd>
+</dl>
+</section>
+<section id="pos-syncing-errors-with-square">
+<h2>3. POS Syncing Errors with Square<a class="headerlink" href="#pos-syncing-errors-with-square" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>Fixed an issue where some transactions from Square POS systems were not syncing correctly with BizFlows due to a data formatting mismatch.</p>
+</dd>
+<dt>Impact:</dt><dd><p>Square users should no longer experience missed or delayed transactions.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Link to this heading"></a></h1>
+<section id="delayed-sms-notifications-for-large-campaigns">
+<h2>1. Delayed SMS Notifications for Large Campaigns<a class="headerlink" href="#delayed-sms-notifications-for-large-campaigns" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>SMS notifications for large customer campaigns (&gt;1000 recipients) may experience slight delays. We are actively working with our SMS provider to resolve this issue in a future update.</p>
+</dd>
+<dt>Temporary Workaround:</dt><dd><p>For urgent campaigns, consider breaking them into smaller batches for quicker delivery.</p>
+</dd>
+</dl>
+</section>
+<section id="inventory-alerts-not-appearing-in-dashboard">
+<h2>2. Inventory Alerts Not Appearing in Dashboard<a class="headerlink" href="#inventory-alerts-not-appearing-in-dashboard" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Description:</dt><dd><p>Some users have reported that inventory low-stock alerts are not appearing in their dashboards. We are investigating the root cause and will release a patch shortly.</p>
+</dd>
+<dt>Temporary Workaround:</dt><dd><p>Please manually check inventory levels in the Inventory Management section until the issue is resolved.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="upcoming-features">
+<h1>Upcoming Features<a class="headerlink" href="#upcoming-features" title="Link to this heading"></a></h1>
+<section id="nlp-chatbot-for-real-time-customer-support">
+<h2>1. NLP Chatbot for Real-Time Customer Support<a class="headerlink" href="#nlp-chatbot-for-real-time-customer-support" title="Link to this heading"></a></h2>
+<p>Expected Release: Next Quarter</p>
+<p>BizFlows will introduce an AI-powered chatbot to assist businesses with common tasks such as scheduling deliveries, generating reports, and answering questions about platform features.</p>
+</section>
+<section id="multi-language-support-for-sms-notifications">
+<h2>2. Multi-Language Support for SMS Notifications<a class="headerlink" href="#multi-language-support-for-sms-notifications" title="Link to this heading"></a></h2>
+<p>Expected Release: Next Quarter</p>
+<p>We are adding multi-language support for SMS notifications to help businesses communicate with customers in their preferred language.</p>
+</section>
+</section>
+<section id="release-documentation">
+<h1>Release Documentation<a class="headerlink" href="#release-documentation" title="Link to this heading"></a></h1>
+<p>For detailed information on how to implement new features or set up integrations, please refer to the BizFlows Knowledge Base or contact our Customer Support Team.</p>
+<ul class="simple">
+<li><p>Knowledge Base Link: [Insert Link]</p></li>
+<li><p>Support Contact: <a class="reference external" href="mailto:support&#37;&#52;&#48;bizflows&#46;com">support<span>&#64;</span>bizflows<span>&#46;</span>com</a> or call [Phone Number]</p></li>
+</ul>
+</section>
+<section id="id1">
+<h1>Internal Release Notes for BizFlows Team<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>Version: 1.0
+Release Date: [Insert Date]</p>
+<dl class="simple">
+<dt>Internal Team Overview</dt><dd><dl class="field-list simple">
+<dt class="field-odd">maxdepth<span class="colon">:</span></dt>
+<dd class="field-odd"><p>2</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<hr class="docutils" />
+<p>The 1.0 release introduces several key features, including real-time delivery tracking, automated invoicing, AI-powered inventory management, and customer segmentation. This release is targeted at meeting the needs of Ethiopian-owned businesses in the DMV area and offers significant enhancements to the overall platform.</p>
+<section id="id2">
+<h2>Impact on Sales and Customer Support<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Sales:</dt><dd><ul class="simple">
+<li><p>Sales teams should emphasize the value of AI-driven features like inventory forecasting and customer segmentation in demos, as these are unique selling points for BizFlows.</p></li>
+<li><p>Focus on pushing Pro and Enterprise tiers, which offer the most comprehensive feature set for businesses looking to optimize operations and reduce manual processes.</p></li>
+</ul>
+</dd>
+<dt>Customer Support:</dt><dd><ul class="simple">
+<li><p>Be prepared to assist customers with setting up delivery tracking and automated invoicing, as these are the most requested features.</p></li>
+<li><p>Training sessions will be provided to ensure support teams can handle questions about AI forecasting and POS integrations.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="id3">
+<h2>Next Steps for Development<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Immediate Focus:</dt><dd><ul class="simple">
+<li><p>Monitor the performance of real-time delivery tracking and invoicing systems to ensure stability during peak usage.</p></li>
+<li><p>Prioritize resolving known issues, particularly SMS notification delays and inventory alerts.</p></li>
+</ul>
+</dd>
+<dt>Upcoming Features:</dt><dd><ul class="simple">
+<li><p>The NLP chatbot for customer support and multi-language SMS notifications are in final stages of development and should be prioritized for the next release.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="release_documentation.html" class="btn btn-neutral float-left" title="Release Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="productoverview.html" class="btn btn-neutral float-right" title="Product Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Yisac Wanna.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

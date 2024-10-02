@@ -1,0 +1,31 @@
+.. toctree::
+   :maxdepth: 2
+
+Bug Fixes and Known Issues
+++++++++++++++++++++++++++
+
+Recent Bug Fixes
+================
+
+* Fixed an issue where the AI would occasionally provide irrelevant answers.
+* Resolved a problem with the user interface not rendering correctly on certain mobile devices.
+* Addressed a bug causing occasional crashes during extended interview sessions.
+
+Known Issues
+============
+
+* The resume parsing feature may struggle with certain PDF formats.
+* In rare cases, the AI may repeat questions within the same interview session.
+* The progress tracking system may not accurately reflect completed modules for some users.
+
+Reporting Bugs
+==============
+
+If you encounter any bugs or issues not listed here, please report them through our support portal or email us at support@techtalk-ai.com. Include the following information:
+
+* A detailed description of the issue
+* Steps to reproduce the problem
+* Your device and operating system information
+* Any error messages or screenshots, if applicable
+
+We appreciate your help in improving BizFlows!
